@@ -17,7 +17,6 @@ interface InputProps extends TextInputProps {
   rightIcon?: string;
   iconStyle?: any;
   rightIconPress?: () => void;
-  showPassword?: boolean;
 }
 
 const AppInput: React.FC<InputProps> = ({
@@ -28,7 +27,6 @@ const AppInput: React.FC<InputProps> = ({
   rightIcon,
   rightIconPress,
   iconStyle,
-  showPassword,
   ...inputProps
 }) => {
   return (
