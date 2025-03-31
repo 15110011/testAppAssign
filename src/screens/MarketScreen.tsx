@@ -15,6 +15,7 @@ import {useAppSelector} from '../hooks/useAppSelector';
 import {MarketItem} from '../types/market';
 import TokenItem from '../components/TokenItem';
 import HeaderFiltered from '../components/HeaderFiltered';
+import ScreenContainer from '../components/ScreenContainer';
 
 const MarketScreen = () => {
   const dispatch = useAppDispatch();
@@ -66,7 +67,7 @@ const MarketScreen = () => {
   );
 
   return (
-    <View style={styles.container}>
+    <ScreenContainer style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>MARKETS</Text>
         <TouchableOpacity>
@@ -97,7 +98,7 @@ const MarketScreen = () => {
           loadMore();
         }}
       />
-    </View>
+    </ScreenContainer>
   );
 };
 
@@ -106,7 +107,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.lightGrey2,
     paddingHorizontal: Spacing.L,
-    marginTop: Spacing.XL,
   },
   header: {
     flexDirection: 'row',

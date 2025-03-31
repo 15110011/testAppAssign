@@ -29,7 +29,7 @@ const SignInScreen = () => {
   };
 
   return (
-    <ScreenContainer useBackground>
+    <ScreenContainer useBackground isScrollView>
       <View style={styles.header}>
         <Image source={Logo} style={styles.logo} />
         <Text style={styles.title}>Sign in</Text>
